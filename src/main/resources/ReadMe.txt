@@ -7,3 +7,5 @@ Service Class - Used for Business Logic of the application - @Service
 Reposiory Class/Interface - Used for DB connection - @Repository
 Model/Data Class - Used for data objects
 
+data.sql - Data gets inserted into DB automatically each time after server restart
+

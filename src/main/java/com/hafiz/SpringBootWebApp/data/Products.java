@@ -1,9 +1,12 @@
 package com.hafiz.SpringBootWebApp.data;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.math.BigDecimal;
 
 
 @Data  // @Data - Lombok library used to create constructors, getters and setters
@@ -16,8 +19,14 @@ import lombok.*;
 public class Products {
 
     @Id // @Id - Primary Key mapping
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // @GeneratedValue - Auto Generates ProductId
     private int productId;
-    private String productName;
-    private double price;
+    private String productname;
+    private String description;
+    private BigDecimal price;
+    private String category;
+    private String brand;
+    private boolean available;
+
 
 }
