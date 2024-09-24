@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin // @CrossOrigin - Front End connectivity
 public class ProductController {
 
     @Autowired
